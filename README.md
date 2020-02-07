@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### PROJECT: CODING UNIVERSITY TECH APP using rails 5.
 
-Things you may want to cover:
+####Ready to deploy it in heroku.
 
-* Ruby version
+### Builded by : Falguni Islam (Software Developer)
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*  Look at structure of a Rails Application.
+*  Brief look at MVC (Model,View,Controller).
+* Explore how to set root route to a page ofour choice.

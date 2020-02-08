@@ -23,6 +23,8 @@
       - rails generate migration create_students & create model file(     student.rb);
       - Rails c ( reload!,Student, Student.all,student = _, ; student.errors.any? ; student.errors.full_messages ; Student.create(name: "John doe", email: "johndoe@example.com") ; )
 
+      - 
+
 
 ```
 

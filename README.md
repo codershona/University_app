@@ -13,6 +13,11 @@
 *  Explore the main layout file - application.html.erb .
 *  Explore embedded ruby code within .html.erb files .
 *  Using Materialize CSS and Responsive to make my app Mobile-friendly.
-*  
 
+*  Working on CRUD for back-end and front-end: 
+```
+      - rails generate migration create_courses ;
+      - rails c ( reload!,  Course.all, Course, cs111 = Course.new, cs111.short_name = "CS111", cs111, cs111.name = "Intro to Programming language", cs111.description = "An in-depth look at Computer Science as a field and programming in general", cs111.save, cs111 = Course.first, cs112 = Course.create(short_name: "CS112", name: "Data Structures and Algorithms", description: "An in-depth look at data structures as they relate to Computer Science"), cs111 = Course.find(1), working_course = Course.find(2), working_course , working_course.description = "An in-depth look at data structures.", Course.last, working_course.save, cs205 = Course.create(short_name: "CS205"), Course.destroy(3)--this will delete data from sql table ;      )
+      - to delete schema data run  rails db:rollback; 
 
+```

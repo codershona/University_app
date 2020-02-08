@@ -12,5 +12,7 @@
 *  Explore how to set root route to a page ofour choice.
 *  Explore the main layout file - application.html.erb .
 *  Explore embedded ruby code within .html.erb files .
+*  Using Materialize CSS and Responsive to make my app Mobile-friendly.
+*  
 
 

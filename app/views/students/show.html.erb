@@ -9,7 +9,7 @@
 	          </p>
 
 	      </span>
-	      
+
 	     <p>
               EMAIL: <%= @student.email %>
 	          </p>
@@ -18,14 +18,12 @@
 	          	COURSE ENROLLMENTS: None
 	          </p>
 	        </div>
-	       <!--  <div class="card-action"> -->
-	  <!--         <a href="#">VIEW STUDENT PROFILE</a> -->
-
-	     <!--   <h3>Current Enrollments</h3> -->
-	         
-	      <!--   </div> -->
-
 	      </div>
+   
+   <%= link_to ' <i class="material-icons right">create</i>Edit your Profile'.html_safe, edit_student_path(@student), class: "waves-effect waves-light btn" %>
+ 
+
 
 	  </div>
+	</div>
 

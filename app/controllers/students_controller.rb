@@ -44,7 +44,7 @@ class StudentsController < ApplicationController
      @student = Student.find(params[:id])
      if @student.update(student_params)
       flash[:notice] = "You have sucessfully updated your profile"
-      redirect_to student_path(@student) 
+      redirect_to @student 
      else
       render 'edit'
 

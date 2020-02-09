@@ -40,3 +40,6 @@
 *  Update forms to accept this.
 *  Update Controller.
 *  Login logout functionality - authentication system.
+```
+      - rails c ( Student.find_by(email: 'mashrur@example.com') ; student = _ ; student.authenticate('password') ;  )
+```

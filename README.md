@@ -1,12 +1,13 @@
 # README
 
-### PROJECT: CODING UNIVERSITY TECH APP using rails 5.
+### PROJECT: CODING UNIVERSITY TECH APP using Rails 5.
 
 ### Builded by : Falguni Islam (Software Developer)
 
 #### Ready to deploy it in HEROKU.
 
 #### Project can be found in here.
+
 
 *  Look at structure of a Rails Application.
 *  Brief look at MVC (Model,View,Controller).

@@ -7,6 +7,8 @@
                 <li>
                 <%= session_link %>
                 </li>
+
+
        <li><a href="#!">two</a></li>
           <li class="divider"></li>
           <li><a href="#!">three</a></li>
@@ -18,6 +20,8 @@
                 <li>
                 <%= session_link %>
                 </li>
+
+
                           <li><a href="#!">two</a></li>
           <li class="divider"></li>
           <li><a href="#!">three</a></li>
@@ -29,19 +33,46 @@
        <div class="container">
 
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo right">CODING UNIVERSITY</a>
+          
+<%= link_to "CODING UNIVERSITY", root_path, class: "brand-logo right"  %>
 
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#">COURSES</a></li>
-            <li><a href="#">ENROLLMENTS</a></li>
+            <li>
+              <%= link_to "COURSES", root_path %>
+            </li>
+
+    <% if logged_in? %>
+             <li>
+              <%= link_to "STUDENTS", students_path %>
+            </li>
+
+            <% end %>
+
+
   <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">ACCOUNT<i class="material-icons right">arrow_drop_down</i></a></li>
 
           </ul>
 
           <ul class="sidenav" id="mobile-demo">
-              <li><a href="#">COURSES</a></li>
-              <li><a href="#">ENROLLMENTS</a></li>
+
+                        <li>
+              <%= link_to "COURSES", root_path %>
+            </li>
+
+
+
+
+               <% if logged_in? %>
+             <li>
+              <%= link_to "STUDENTS", students_path %>
+            </li>
+
+            <% end %>
+
+            
+
+             
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">ACCOUNT<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
                     

@@ -15,7 +15,7 @@
     <div class="row">
     	<div class="input-field col s12">
 
-    <%= f.text_field :name, placeholder: "Enter you full name", autofocus: true %>
+    <%= f.text_field :name, placeholder: "Enter your full name", autofocus: true %>
     <%= f.label :name %>
 
 	   </div>
@@ -25,12 +25,40 @@
     	<div class="input-field col s12">
 
 
-   <%= f.email_field :email, placeholder: "Enter you email address"  %>
+   <%= f.email_field :email, placeholder: "Enter your email address"  %>
    <%= f.label :email %>
 
 	  </div>
 	</div>
 	   
+
+
+          <div class="row">
+      <div class="input-field col s12">
+
+
+   <%= f.password_field :password, placeholder: "Enter your password at least 8"  %>
+   <%= f.label :password %>
+
+    </div>
+  </div>
+
+
+
+
+         <div class="row">
+      <div class="input-field col s12">
+
+
+   <%= f.password_field :password_confirmation, placeholder: "Confirm your password"  %>
+   <%= f.label :password_confirmation %>
+
+    </div>
+  </div>
+
+
+
+
 
  <div class="row">
     	<div class="input-field col s12">

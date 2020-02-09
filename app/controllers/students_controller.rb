@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+ before_action :set_student, only: [:show, :edit, :update]
 
 	def index
     
@@ -8,7 +9,7 @@ class StudentsController < ApplicationController
 
 
   def show
-   @student = Student.find(params[:id])
+  
 
   end
 
@@ -33,7 +34,7 @@ class StudentsController < ApplicationController
 
     def edit
      
-    @student = Student.find(params[:id])
+ 
 
     end
 
@@ -41,7 +42,7 @@ class StudentsController < ApplicationController
 
     def update
 
-     @student = Student.find(params[:id])
+     
      if @student.update(student_params)
       flash[:notice] = "You have sucessfully updated your profile"
       redirect_to @student 
@@ -57,10 +58,19 @@ class StudentsController < ApplicationController
 	private
 
 
+  def set_student
+  @student = Student.find(params[:id])
+
+
+  end
+
+
 def student_params
 	params.require(:student).permit(:name, :email)
 
 end
+
+
 
 
 

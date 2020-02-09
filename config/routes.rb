@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 	post 'login', to: 'logins#create'
 	delete 'logout', to: 'logins#destroy'
 
-
+    post 'course_enroll', to: 'student_courses#create'
 	
 
 end

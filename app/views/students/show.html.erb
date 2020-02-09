@@ -15,7 +15,20 @@
 	          </p>
 
 	          <p>
-	          	COURSE ENROLLMENTS: None
+	          	COURSE ENROLLMENTS: 
+	          <% if @student.courses.empty? %>
+	          NONE
+	          <% else %>
+          <ul>
+          	<% @student.courses.each do |course| %>
+
+         <li>
+         	<%= course.name %>
+         </li>
+          	<% end %>
+          </ul>
+
+	          <% end %>
 	          </p>
 	        </div>
 	      </div>

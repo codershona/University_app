@@ -8,10 +8,20 @@
                 <%= session_link %>
                 </li>
 
+     <% if logged_in? %>
+          <li>
+             <%= link_to "PROFILE", student_path(current_user) %>
+           </li>
 
-       <li><a href="#!">two</a></li>
+    <% end %>
+
           <li class="divider"></li>
-          <li><a href="#!">three</a></li>
+
+           <li>
+        <%= link_to "SIGN UP", new_student_path %>
+
+      </li>
+          
         </ul>
 
           <!-- Dropdown Structure -->
@@ -22,9 +32,22 @@
                 </li>
 
 
-                          <li><a href="#!">two</a></li>
+                     <% if logged_in? %>
+          <li>
+             <%= link_to "PROFILE", student_path(current_user) %>
+           </li>
+
+    <% end %>
+
+
+
           <li class="divider"></li>
-          <li><a href="#!">three</a></li>
+
+                 <li>
+        <%= link_to "SIGN UP", new_student_path %>
+
+      </li>
+         
         </ul>
 
 

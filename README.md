@@ -4,8 +4,9 @@
 
 ### Builded by : Falguni Islam (Software Developer)
 
-#### Ready to deploy it in heroku.
+#### Ready to deploy it in HEROKU.
 
+#### Project can be found in here.
 
 *  Look at structure of a Rails Application.
 *  Brief look at MVC (Model,View,Controller).
@@ -42,4 +43,11 @@
 *  Login logout functionality - authentication system.
 ```
       - rails c ( Student.find_by(email: 'mashrur@example.com') ; student = _ ; student.authenticate('password') ;  )
+```
+*  Introducing to many-to-many associations.
+
+```
+     - rails generate migration create_student_courses ;
+     - rails c ( student = Student.first; course = Course.first; student.courses; course.students; student.courses << course;  student.courses.count; course.students.each { |student| puts student.name } ;  Student.last; course.students << Student.last;
+     StudentCourse.all;   )
 ```

@@ -8,10 +8,17 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">INFORMATON</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">HELP</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">ABOUT</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">CONTACT US</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">OUR UNIVERSITY</a></li>
+              <li>
+               <%= link_to "HELP", courses_new_path, class: "grey-text text-lighten-3" %>
+                 
+               </li>
+              <li>
+                 <%= link_to "ABOUT US", about_path, class: "grey-text text-lighten-3" %>
+              </li>
+              <li>
+                   <%= link_to "CONTACT US", courses_new_path, class: "grey-text text-lighten-3" %>
+              </li>
+              <li> <%= link_to "OUR UNIVERSITY", root_path,class: "grey-text text-lighten-3" %></li>
             </ul>
           </div>
         </div>
@@ -19,7 +26,7 @@
       <div class="footer-copyright">
         <div class="container">
         © 2020 CODING UNIVERSITY
-        <a class="grey-text text-lighten-4 right" href="#!">ABOUT US</a>
+           <%= link_to "ABOUT US", about_path, class: "grey-text text-lighten-3" %>
         </div>
       </div>
     </footer>

@@ -1,10 +1,12 @@
 # README
 
-### PROJECT: CODING UNIVERSITY TECH APP using rails 5.
+### PROJECT: CODING UNIVERSITY TECH APP using Rails 5.
 
 ### Builded by : Falguni Islam (Software Developer)
 
-#### Ready to deploy it in heroku.
+#### Ready to deploy it in HEROKU.
+
+#### Project can be found in here.
 
 
 *  Look at structure of a Rails Application.
@@ -29,4 +31,24 @@
 ```
 
 
- *  
+*  Extract Redundancies and DRY-up the code.
+*  Add passwords funtionality, test in db, update table records.
+ ```
+       -  rails generate migration add_password_digest_to_students ;
+       - rails c (  Student.all, student = Student.first ,student.password, student.password = "password", student.save,student.authenticate("incorrectpassword"),student.authenticate("password") ,student.password = "password1", { To delete all record: Student.delete_all } )
+       - rails c { (To assign all password - Student.all.each do |student|
+       	; student.password = "password" ; student.save ; end ; )}
+```
+*  Update forms to accept this.
+*  Update Controller.
+*  Login logout functionality - authentication system.
+```
+      - rails c ( Student.find_by(email: 'mashrur@example.com') ; student = _ ; student.authenticate('password') ;  )
+```
+*  Introducing to many-to-many associations.
+
+```
+     - rails generate migration create_student_courses ;
+     - rails c ( student = Student.first; course = Course.first; student.courses; course.students; student.courses << course;  student.courses.count; course.students.each { |student| puts student.name } ;  Student.last; course.students << Student.last;
+     StudentCourse.all;   )
+```

@@ -29,13 +29,14 @@
 ```
 
 
- *  Extract Redundancies and DRY-up the code.
- *  Add passwords funtionality, test in db, update table records.
+*  Extract Redundancies and DRY-up the code.
+*  Add passwords funtionality, test in db, update table records.
  ```
        -  rails generate migration add_password_digest_to_students ;
        - rails c (  Student.all, student = Student.first ,student.password, student.password = "password", student.save,student.authenticate("incorrectpassword"),student.authenticate("password") ,student.password = "password1", { To delete all record: Student.delete_all } )
        - rails c { (To assign all password - Student.all.each do |student|
        	; student.password = "password" ; student.save ; end ; )}
 ```
- *  Update forms to accept this.
- *  Update Controller.
+*  Update forms to accept this.
+*  Update Controller.
+*  Login logout functionality - authentication system.

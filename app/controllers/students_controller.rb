@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
 	end
 
 	def create
-    byebug
+   
       @student = Student.new(student_params)
       if @student.save
        flash[:notice] = "You have sucessfully signed up"
@@ -67,7 +67,7 @@ class StudentsController < ApplicationController
 
 
 def student_params
-	params.require(:student).permit(:name, :email)
+	params.require(:student).permit(:name, :email, :password, :password_confirmation)
 
 end
 

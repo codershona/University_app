@@ -30,3 +30,6 @@
 
 
  *  Extract Redundancies and DRY-up the code.
+ *  Add passwords funtionality, test in db, update table records.
+ *  Update forms to accept this.
+ *  Update Controller.

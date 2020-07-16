@@ -2,7 +2,8 @@
 
 ### PROJECT: CODING UNIVERSITY TECH APP using Rails 5.
 
-### Builded by : Falguni Islam (Software Developer)
+#### Project Can be found in here :
+ **[Live version](https://vast-garden-45190.herokuapp.com/)**
 
 #### Ready to deploy it in HEROKU.
 

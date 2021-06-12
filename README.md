@@ -4,6 +4,14 @@
 
 #### Project Can be found in here :
  **[Live version](https://vast-garden-45190.herokuapp.com/)**
+ 
+ <p align="center">
+	
+<img src="https://user-images.githubusercontent.com/57604500/121789923-7cadb500-cbda-11eb-9e54-a2584842b3f5.png" width=1000>
+<br />
+<h3 align="center">CODING UNIVERSITY TECH APP</h3>
+</p>
+
 
 #### Ready to deploy it in HEROKU.
 
